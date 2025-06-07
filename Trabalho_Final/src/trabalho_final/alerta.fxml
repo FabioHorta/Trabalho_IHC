@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="800" style="-fx-background-color: linear-gradient(to bottom, #00bcd4, #ff8a65);" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalho_final.AlertaController">
+
+    <center>
+        <VBox fx:id="alertaBox" alignment="CENTER" maxHeight="400.0" maxWidth="400.0" spacing="20" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 40; -fx-effect: dropshadow(gaussian, #000000, 15, 0.3, 0, 0);">
+
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #003366;" text="Alertas de Garantia" />
+
+            <ListView fx:id="listViewAlertas" prefHeight="250" style="-fx-background-radius: 8;                              -fx-border-color: #e0e0e0;                              -fx-border-radius: 8;" />
+
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="btnRemoverAlerta" onAction="#removerAlerta" style="-fx-background-color: #00796b; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-font-weight: bold;" text="Remover Alerta" />
+
+                <Button fx:id="btnVoltar" onAction="#voltarMenu" style="-fx-background-color: #757575; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-font-weight: bold;" text="Voltar" />
+            </HBox>
+
+        </VBox>
+    </center>
+</BorderPane>

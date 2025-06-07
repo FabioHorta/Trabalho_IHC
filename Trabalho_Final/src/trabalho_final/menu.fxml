@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" style="-fx-background: linear-gradient(to bottom, #00bcd4, #ff8a65);" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalho_final.MenuController">
+
+    <center>
+        <VBox fx:id="menuBox" alignment="CENTER" maxHeight="300.0" maxWidth="300.0" spacing="25" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 30; -fx-effect: dropshadow(gaussian, #000000, 15, 0.3, 0, 0);">
+
+            <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #003366;" text="Menu Principal" />
+
+
+            <Button fx:id="btnFatura" onAction="#abrirFaturas" style="-fx-background-color: #00796b; -fx-text-fill: white;                             -fx-padding: 12px 24px; -fx-font-size: 16px; -fx-border-radius: 10px;                             -fx-font-weight: bold; -fx-min-width: 250px;" text="Registar Fatura" />
+
+       
+            <Button fx:id="btnGarantia" onAction="#abrirGarantias" style="-fx-background-color: #00796b; -fx-text-fill: white;                             -fx-padding: 12px 24px; -fx-font-size: 16px; -fx-border-radius: 10px;                             -fx-font-weight: bold; -fx-min-width: 250px;" text="Registar Garantia" />
+
+
+            <Button fx:id="btnAlertas" onAction="#abrirAlertas" style="-fx-background-color: #00796b; -fx-text-fill: white;                             -fx-padding: 12px 24px; -fx-font-size: 16px; -fx-border-radius: 10px;                             -fx-font-weight: bold; -fx-min-width: 250px;" text="Ver Alertas" />
+
+         
+            <Button fx:id="btnConsulta" onAction="#abrirConsulta" style="-fx-background-color: #00796b; -fx-text-fill: white;                             -fx-padding: 12px 24px; -fx-font-size: 16px; -fx-border-radius: 10px;                             -fx-font-weight: bold; -fx-min-width: 250px;" text="Ver Faturas" />
+
+ 
+            <Button fx:id="btnLogout" onAction="#terminarSessao" style="-fx-background-color: #00796b; -fx-text-fill: white;                             -fx-padding: 12px 24px; -fx-font-size: 16px; -fx-border-radius: 10px;                             -fx-font-weight: bold; -fx-min-width: 250px;" text="Terminar Sessão" />
+        </VBox>
+    </center>
+</BorderPane>

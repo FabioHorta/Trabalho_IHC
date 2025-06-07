@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="800" style="-fx-background: linear-gradient(to bottom, #00bcd4, #ff8a65);" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalho_final.LoginController">
+
+    <center>
+        <VBox fx:id="loginBox" alignment="CENTER" maxHeight="200.0" maxWidth="300.0" spacing="20" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 30; -fx-effect: dropshadow(gaussian, #000000, 15, 0.3, 0, 0);">
+            
+            <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #003366;" text="Login" />
+
+        
+            <TextField fx:id="usernameField" promptText="Nome de utilizador" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-border-radius: 10; -fx-font-size: 16px; -fx-padding: 10px;" />
+
+        
+            <PasswordField fx:id="passwordField" promptText="Palavra-passe" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-border-radius: 10; -fx-font-size: 16px; -fx-padding: 10px;" />
+
+ 
+            <Button fx:id="loginButton" maxWidth="Infinity" onAction="#handleLogin" style="-fx-background-color: #00796b; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 12px 24px; -fx-border-radius: 10; -fx-effect: dropshadow(gaussian, #000000, 10, 0.5, 0, 0);" text="Entrar" />
+
+
+            <Hyperlink fx:id="registerLink" onAction="#handleRegister" style="-fx-font-size: 16px; -fx-text-fill: #00796b; -fx-padding-top: 10px; -fx-font-weight: bold;" text="Criar conta" />
+        </VBox>
+    </center>
+</BorderPane>

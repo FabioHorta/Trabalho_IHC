@@ -81,7 +81,7 @@ Este é um sistema de gestão desenvolvido com **Java** e **JavaFX**, utilizando
 
 ## 👤 Autores
 
-*Fábio Horta**  
+**Fábio Horta**  
 
 [GitHub](https://github.com/FabioHorta) | [LinkedIn](https://www.linkedin.com/in/fábio-horta-096aa717b/)
 
